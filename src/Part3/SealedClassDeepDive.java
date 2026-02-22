@@ -37,6 +37,8 @@ public class SealedClassDeepDive {
         }
     }
 
+
+
     public static void main(String[] args) {
         ApiResponse apiData = new Success("{\"user\": \"DevKim\", \"balance\": 50000}", 200);
 

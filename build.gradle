@@ -13,6 +13,15 @@ java {
     }
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// JavaExec(실행) 시에도 UTF-8을 사용하도록 설정
+tasks.withType(JavaExec) {
+    jvmArgs += "-Dfile.encoding=UTF-8"
+}
+
 repositories {
     mavenCentral() // 라이브러리를 가져올 저장소
 }

@@ -58,6 +58,8 @@ public class CodeKata20260223 {
     // 팀원이 작성한 아래 코드는 null 처리를 위해 Optional을 썼지만, 오히려 스트림 중간에 isPresent()와 get()을 남발하여 가독성을 해치고 있습니다.
     // 8년 차 시니어인 당신은 이 코드를 **"함수형 파이프라인이 끊기지 않는 선언형 코드"**로 리팩토링해야 합니다.
 
+    // 상세한 내용은 노션 20260223 스트림은 만능 도구가 아니다에서 확인
+
     public record Manager(String name, String email) {
         public boolean hasValidEmail() {
             return email != null && !email.isBlank();
